@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<package name="test" extends="struts-default">
+		<action name="testAction" class="TestAction">
+			<result name="Success">/Success.jsp</result>
+			<result name="Error">/Error.jsp</result>
+		</action>
+		<action name="registerAction" class="RegisterAction">
+			<result name="success">/Welcome.jsp</result>
+			<result name="input">/Register.jsp</result>
+			<result name="Error">/Error.jsp</result>
+		</action>
+		<action name="registerPage" method="initializeColors" class="RegisterAction">
+			<result name="input">/Register.jsp</result>
+		</action>
+	</package>
+</struts>
